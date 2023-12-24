@@ -1,0 +1,5 @@
+"C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Users/Jana Trpkovska/AppData/Local/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika" -B "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug"
+-- Using Win32 for window creation
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug

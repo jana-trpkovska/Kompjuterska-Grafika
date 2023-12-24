@@ -22,7 +22,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b174cf3b-8b4c-4185-a146-2c500b0fa19e" name="Changes" comment="" />
+    <list default="true" id="b174cf3b-8b4c-4185-a146-2c500b0fa19e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/include/Maze.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Maze.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +72,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/Jana Trpkovska/Desktop/test",
+    "last_opened_file_path": "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +82,11 @@
   }
 }]]></component>
   <component name="RunManager" selected="CMake Application.OpenGLPrj">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OpenGLPrj" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenGLPrj" TARGET_NAME="OpenGLPrj" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenGLPrj" RUN_TARGET_NAME="OpenGLPrj">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -184,6 +194,7 @@
       <workItem from="1703339268417" duration="1756000" />
       <workItem from="1703445318655" duration="326000" />
       <workItem from="1703445936481" duration="45000" />
+      <workItem from="1703447248494" duration="332000" />
     </task>
     <servers />
   </component>
