@@ -23,10 +23,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b174cf3b-8b4c-4185-a146-2c500b0fa19e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/include/Maze.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Maze.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/textures/floor_texture.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/textures/wood.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGLPrj/bin/OpenGLPrj.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGLPrj/bin/OpenGLPrj.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/OpenGLPrj/res/shaders/shader.frag" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/OpenGLPrj/res/shaders/shader.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/shaders/shader.frag" beforeDir="false" afterPath="$PROJECT_DIR$/res/shaders/shader.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Camera.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Camera.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +81,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika",
+    "last_opened_file_path": "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/res/textures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,6 +90,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\res\textures" />
+    </key>
+  </component>
   <component name="RunManager" selected="CMake Application.OpenGLPrj">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
@@ -194,7 +208,7 @@
       <workItem from="1703339268417" duration="1756000" />
       <workItem from="1703445318655" duration="326000" />
       <workItem from="1703445936481" duration="45000" />
-      <workItem from="1703447248494" duration="332000" />
+      <workItem from="1703447248494" duration="1823000" />
     </task>
     <servers />
   </component>
