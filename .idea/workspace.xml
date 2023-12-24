@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="OpenGLPrj" targetName="glfw" />
+      <config projectName="OpenGLPrj" targetName="OpenGLPrj" />
+      <config projectName="OpenGLPrj" targetName="uninstall" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b174cf3b-8b4c-4185-a146-2c500b0fa19e" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="05.pacman-8angles" />
+        <entry key="$PROJECT_DIR$/vendor/glfw" value="2de2589f910b1a85905f425be4d32f33cec092df" />
+        <entry key="$PROJECT_DIR$/vendor/glm" value="color" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="3.2" />
+  </component>
+  <component name="ProjectId" id="2NTrVYqpeEdpjTfNNdQQ5D9Z2y0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/Jana Trpkovska/Desktop/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="CMake Application.OpenGLPrj">
+    <configuration name="OpenGLPrj" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenGLPrj" TARGET_NAME="OpenGLPrj" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenGLPrj" RUN_TARGET_NAME="OpenGLPrj">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="glfw" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenGLPrj" TARGET_NAME="glfw" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenGLPrj" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.OpenGLPrj" />
+      <item itemvalue="CMake Application.uninstall" />
+      <item itemvalue="CMake Application.glfw" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b174cf3b-8b4c-4185-a146-2c500b0fa19e" name="Changes" comment="" />
+      <created>1679698938200</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679698938200</updated>
+      <workItem from="1679698939669" duration="1503000" />
+      <workItem from="1679700465049" duration="35000" />
+      <workItem from="1679700523701" duration="6069000" />
+      <workItem from="1679772669562" duration="13460000" />
+      <workItem from="1679790901273" duration="35000" />
+      <workItem from="1679838307409" duration="1867000" />
+      <workItem from="1679840596062" duration="14671000" />
+      <workItem from="1679859485041" duration="119000" />
+      <workItem from="1679859618850" duration="1344000" />
+      <workItem from="1680213039958" duration="30000" />
+      <workItem from="1680213082883" duration="1673000" />
+      <workItem from="1680259029141" duration="19000" />
+      <workItem from="1680259065028" duration="12000" />
+      <workItem from="1680259091552" duration="6637000" />
+      <workItem from="1680392221195" duration="40000" />
+      <workItem from="1680392271319" duration="28000" />
+      <workItem from="1680392311524" duration="6246000" />
+      <workItem from="1680475479424" duration="1085000" />
+      <workItem from="1680478685525" duration="3147000" />
+      <workItem from="1680481977924" duration="12000" />
+      <workItem from="1680546656396" duration="10000" />
+      <workItem from="1680551862359" duration="34000" />
+      <workItem from="1680551914369" duration="125000" />
+      <workItem from="1680569337756" duration="843000" />
+      <workItem from="1680570204866" duration="1456000" />
+      <workItem from="1680647495981" duration="24000" />
+      <workItem from="1680647532217" duration="5450000" />
+      <workItem from="1680716826143" duration="486000" />
+      <workItem from="1680717329482" duration="15570000" />
+      <workItem from="1680733486720" duration="414000" />
+      <workItem from="1680733916569" duration="1177000" />
+      <workItem from="1681759180594" duration="7011000" />
+      <workItem from="1681849811015" duration="1199000" />
+      <workItem from="1681935851658" duration="10892000" />
+      <workItem from="1681948178230" duration="1146000" />
+      <workItem from="1682101005250" duration="163000" />
+      <workItem from="1682207117795" duration="124000" />
+      <workItem from="1682682537083" duration="1772000" />
+      <workItem from="1683892732989" duration="5895000" />
+      <workItem from="1684493653072" duration="4472000" />
+      <workItem from="1684930113518" duration="6130000" />
+      <workItem from="1684964280031" duration="9597000" />
+      <workItem from="1684974097939" duration="1251000" />
+      <workItem from="1685100873406" duration="117000" />
+      <workItem from="1685101044749" duration="1616000" />
+      <workItem from="1685307199398" duration="111000" />
+      <workItem from="1685834889161" duration="7148000" />
+      <workItem from="1685842157627" duration="108000" />
+      <workItem from="1685876555660" duration="6541000" />
+      <workItem from="1685967661907" duration="4110000" />
+      <workItem from="1685996577145" duration="121000" />
+      <workItem from="1686751318278" duration="4966000" />
+      <workItem from="1686834717084" duration="5951000" />
+      <workItem from="1686861617494" duration="7680000" />
+      <workItem from="1686871044449" duration="546000" />
+      <workItem from="1687022103383" duration="6237000" />
+      <workItem from="1687040876079" duration="2950000" />
+      <workItem from="1687043945173" duration="508000" />
+      <workItem from="1687044695091" duration="2332000" />
+      <workItem from="1687087943855" duration="5032000" />
+      <workItem from="1687093402484" duration="9438000" />
+      <workItem from="1687125377920" duration="126000" />
+      <workItem from="1689034282813" duration="1628000" />
+      <workItem from="1689035947947" duration="276000" />
+      <workItem from="1689059017035" duration="816000" />
+      <workItem from="1691838664639" duration="1200000" />
+      <workItem from="1694614156033" duration="571000" />
+      <workItem from="1694615237429" duration="12000" />
+      <workItem from="1694615379340" duration="128000" />
+      <workItem from="1694615524417" duration="180000" />
+      <workItem from="1694615721589" duration="70000" />
+      <workItem from="1694691381962" duration="96000" />
+      <workItem from="1694692008165" duration="1148000" />
+      <workItem from="1694785446501" duration="1193000" />
+      <workItem from="1696254128650" duration="361000" />
+      <workItem from="1703339268417" duration="1756000" />
+      <workItem from="1703445318655" duration="326000" />
+      <workItem from="1703445936481" duration="45000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/camera-2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
