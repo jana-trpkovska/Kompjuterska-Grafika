@@ -81,7 +81,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/res/textures",
+    "last_opened_file_path": "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,12 +96,12 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.OpenGLPrj">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="OpenGLPrj" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenGLPrj" TARGET_NAME="OpenGLPrj" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenGLPrj" RUN_TARGET_NAME="OpenGLPrj">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenGLPrj" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenGLPrj" TARGET_NAME="OpenGLPrj" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenGLPrj" RUN_TARGET_NAME="OpenGLPrj">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -208,7 +208,7 @@
       <workItem from="1703339268417" duration="1756000" />
       <workItem from="1703445318655" duration="326000" />
       <workItem from="1703445936481" duration="45000" />
-      <workItem from="1703447248494" duration="1823000" />
+      <workItem from="1703447248494" duration="1860000" />
     </task>
     <servers />
   </component>

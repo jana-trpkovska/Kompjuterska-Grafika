@@ -11,6 +11,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <Maze.h>
+#include <random>
 
 const std::string program_name = ("3D Maze Game");
 
@@ -33,6 +34,8 @@ static bool firstMouse = true;
 static float deltaTime = 0.0f; // time between current frame and last frame
 static float lastFrame = 0.0f;
 
+const unsigned int maxCubes = 5; // Maximum number of cubes to place
+
 struct Cube{
     glm::vec3 position;
     glm::vec3 size;
@@ -52,8 +55,64 @@ static std::vector<Cube> convertMazeToWorld(std::vector<glm::vec3> maze){
             result.push_back({glm::vec3(m.x, 1, m.y + 0.5f - wallSize/2), glm::vec3(1, 1, wallSize)});
         }
     }
+
+    // Logic to place cubes within free spaces of the maze
+    unsigned int cubesPlaced = 0;
+
+    // Iterate through maze coordinates and check for free spaces to place cubes
+    for (glm::vec3 m : maze) {
+        bool isFreeSpace = true;
+
+        // Check if the current position in the maze is a free space (not a wall or existing cube)
+        for (const Cube& cube : result) {
+            if (glm::distance(glm::vec2(m.x, m.y), glm::vec2(cube.position.x, cube.position.z)) < 0.1f) {
+                isFreeSpace = false; // Found a cube or wall nearby
+                break;
+            }
+        }
+
+        if (isFreeSpace && cubesPlaced < maxCubes) {
+            // Place a cube at the current free position within the maze
+            result.push_back({ glm::vec3(m.x, 0.3f, m.y), glm::vec3(0.2f) }); // Adjust the size and height of the cubes as needed
+            cubesPlaced++;
+        }
+
+        if (cubesPlaced >= maxCubes) {
+            break; // Placed the maximum number of cubes
+        }
+    }
+
     return result;
 }
+
+// Function to generate random positions for the cubes within the maze
+std::vector<glm::vec3> generateRandomCubePositions(const std::vector<glm::vec3>& maze) {
+    std::vector<glm::vec3> freeSpaces; // Store free positions within the maze
+
+    // Find free spaces where cubes can be placed
+    for (unsigned i = 0; i < mazeWidth; ++i) {
+        for (unsigned j = 0; j < mazeHeight; ++j) {
+            glm::vec3 currentPosition = glm::vec3(i, 0, j);
+
+            // Check if the current position is a free space (not a wall)
+            if (std::find(maze.begin(), maze.end(), currentPosition) == maze.end()) {
+                freeSpaces.push_back(currentPosition); // Add free position to the list
+            }
+        }
+    }
+
+    // Shuffle the free spaces to randomly choose positions for cubes
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::shuffle(freeSpaces.begin(), freeSpaces.end(), gen);
+
+    // Ensure there are at least 5 free spaces available to place cubes
+    unsigned numCubes = std::min(static_cast<unsigned>(5), static_cast<unsigned>(freeSpaces.size()));
+
+    // Return a subset of free positions where cubes can be placed
+    return std::vector<glm::vec3>(freeSpaces.begin(), freeSpaces.begin() + numCubes);
+}
+
 
 
 int main() {
@@ -153,7 +212,7 @@ int main() {
 
     // load and create a texture
     // -------------------------
-    unsigned int texture1, texture2;
+    unsigned int texture1, texture2, texture3;
     // texture 1
     // ---------
     glGenTextures(1, &texture1);
@@ -208,12 +267,39 @@ int main() {
     }
     stbi_image_free(data);
 
+    // texture 3
+    // ---------
+    glGenTextures(1, &texture3);
+    glBindTexture(GL_TEXTURE_2D, texture3);
+    // set the texture wrapping parameters
+    glTexParameteri(
+            GL_TEXTURE_2D, GL_TEXTURE_WRAP_S,
+            GL_REPEAT); // set texture wrapping to GL_REPEAT (default wrapping method)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    // set texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    // load image, create texture and generate mipmaps
+    data = stbi_load("../res/textures/gradient.jpg", &width, &height,
+                     &nrChannels, 0);
+    if (data) {
+        // note that the awesomeface.png has transparency and thus an alpha channel,
+        // so make sure to tell OpenGL the data type is of GL_RGBA
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB,
+                     GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    } else {
+        std::cout << "Failed to load texture" << std::endl;
+    }
+    stbi_image_free(data);
+
     // tell opengl for each sampler to which texture unit it belongs to (only has
     // to be done once)
     // -------------------------------------------------------------------------------------------
     ourShader.use();
     ourShader.setInt("texture1", 0);
     ourShader.setInt("texture2", 1);
+    ourShader.setInt("texture3", 2);
 
     std::vector<Cube> level;
     for (unsigned i=0;i<mazeWidth;i++) {
@@ -229,6 +315,14 @@ int main() {
     level.reserve(level.size() + maze.size());
     level.insert(level.end(), maze.begin(), maze.end());
 
+    // Generate random positions for the cubes within the maze
+    std::vector<glm::vec3> cubePositions = generateRandomCubePositions(initMaze);
+
+    // Ensure there are at least 5 cubes placed in free spaces
+    for (const auto& cubePos : cubePositions) {
+        // Create cubes at random positions within the maze
+        level.push_back({ cubePos + glm::vec3(0.0f, 0.8f, 0.0f), glm::vec3(0.2f) }); // Adjust the height of the cubes
+    }
 
     // render loop
     // -----------
@@ -275,11 +369,14 @@ int main() {
                 // Set the floor texture
                 glActiveTexture(GL_TEXTURE0);
                 glBindTexture(GL_TEXTURE_2D, texture1);
-            }
-            else{
+            }else if(i>=mazeHeight * mazeWidth && i<level.size()-maxCubes){
                 // Set the wall texture
                 glActiveTexture(GL_TEXTURE0);
                 glBindTexture(GL_TEXTURE_2D, texture2);
+            }else{
+                // Set texture for the cubes
+                glActiveTexture(GL_TEXTURE0);
+                glBindTexture(GL_TEXTURE_2D, texture3);
             }
 
             glDrawArrays(GL_TRIANGLES, 0, 36);
