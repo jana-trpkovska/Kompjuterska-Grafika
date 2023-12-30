@@ -11,6 +11,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <Maze.h>
+#include <Cube.h>
 #include <random>
 
 const std::string program_name = ("3D Maze Game");
@@ -34,12 +35,8 @@ static bool firstMouse = true;
 static float deltaTime = 0.0f; // time between current frame and last frame
 static float lastFrame = 0.0f;
 
+std::vector<Cube> level;
 const unsigned int maxCubes = 5; // Maximum number of cubes to place
-
-struct Cube{
-    glm::vec3 position;
-    glm::vec3 size;
-};
 
 static std::vector<Cube> convertMazeToWorld(std::vector<glm::vec3> maze){
     std::vector<Cube> result;
@@ -301,7 +298,6 @@ int main() {
     ourShader.setInt("texture2", 1);
     ourShader.setInt("texture3", 2);
 
-    std::vector<Cube> level;
     for (unsigned i=0;i<mazeWidth;i++) {
         for(unsigned j=0;j<mazeHeight;j++){
             level.push_back({glm::vec3(i,0,j), glm::vec3(1)});
@@ -408,13 +404,13 @@ void processInput(GLFWwindow *window) {
         glfwSetWindowShouldClose(window, true);
 
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        camera.ProcessKeyboard(FORWARD, deltaTime);
+        camera.ProcessKeyboard(FORWARD, deltaTime,level);
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        camera.ProcessKeyboard(BACKWARD, deltaTime);
+        camera.ProcessKeyboard(BACKWARD, deltaTime,level);
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        camera.ProcessKeyboard(LEFT, deltaTime);
+        camera.ProcessKeyboard(LEFT, deltaTime,level);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        camera.ProcessKeyboard(RIGHT, deltaTime);
+        camera.ProcessKeyboard(RIGHT, deltaTime,level);
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback

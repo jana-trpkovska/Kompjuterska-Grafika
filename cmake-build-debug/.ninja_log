@@ -1,7 +1,7 @@
 # ninja log v5
 41	3780	7251506539663773	vendor/glfw/src/CMakeFiles/glfw.dir/context.c.obj	4e5e4666de75f043
 53	4318	7251506544922724	vendor/glfw/src/CMakeFiles/glfw.dir/init.c.obj	74d456803d0068de
-1	6421	7251506565878921	CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj	8352f9e678285066
+32	5080	7251510451341357	CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj	8352f9e678285066
 20	6614	7251506567781322	CMakeFiles/OpenGLPrj.dir/vendor/glad/src/glad.c.obj	a6eceadb1aa0592b
 18803	18996	7251506692124732	vendor/glfw/src/libglfw3.a	d37a1875dfa20b05
 12	11436	7251506586072930	CMakeFiles/OpenGLPrj.dir/src/Shader.cpp.obj	26091d05253a6bc5
@@ -9,7 +9,7 @@
 3810	11475	7251506606057546	vendor/glfw/src/CMakeFiles/glfw.dir/input.c.obj	1901d876de3596b3
 6430	11499	7251506612132655	vendor/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	d66e3d16e5011fa7
 6614	11529	7251506615053194	vendor/glfw/src/CMakeFiles/glfw.dir/window.c.obj	d25fba6aa421485
-28	14780	7251506649714437	CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj	e997e094f452ccf0
+7	4012	7255934710595153	CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj	e997e094f452ccf0
 11529	15871	7251506660777350	vendor/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	5c7cb0afc5443b15
 11499	16039	7251506662008101	vendor/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	647dd9f8b5e84a83
 11440	16089	7251506662862310	vendor/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	a4734d38c3ae7896
@@ -19,10 +19,8 @@
 15871	18463	7251506686769569	vendor/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	9ffb703a481db795
 16090	18626	7251506688391174	vendor/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	fd992e220fb35c73
 16040	18803	7251506690154062	vendor/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	98e7580081660d25
-18996	19618	7251506696577505	OpenGLPrj/bin/OpenGLPrj.exe	7915d7351d51541b
-32	5080	7251510451341357	CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj	8352f9e678285066
-18	5530	7251510455904868	CMakeFiles/OpenGLPrj.dir/src/Maze.cpp.obj	7880cbd045012ec0
-51	7225	7251510472855359	CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj	e997e094f452ccf0
-7230	7634	7251510476457032	OpenGLPrj/bin/OpenGLPrj.exe	b68fa0749ce4b33e
-7	4012	7255934710595153	CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj	e997e094f452ccf0
 4018	4442	7255934714394451	OpenGLPrj/bin/OpenGLPrj.exe	b68fa0749ce4b33e
+18	5530	7251510455904868	CMakeFiles/OpenGLPrj.dir/src/Maze.cpp.obj	7880cbd045012ec0
+14	6694	7256533606136090	CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj	8352f9e678285066
+26	8543	7256533624606572	CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj	e997e094f452ccf0
+8545	9156	7256533629811615	OpenGLPrj/bin/OpenGLPrj.exe	b68fa0749ce4b33e

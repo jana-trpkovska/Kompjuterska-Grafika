@@ -149,7 +149,7 @@
 			"language" : "C",
 			"sourceIndexes" : 
 			[
-				16
+				18
 			]
 		}
 	],
@@ -306,32 +306,35 @@
 			"sourceIndexes" : 
 			[
 				9,
-				10
+				10,
+				11,
+				12
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				11,
-				12,
 				13,
 				14,
-				15
+				15,
+				16,
+				17
 			]
 		},
 		{
 			"name" : "vendors",
 			"sourceIndexes" : 
 			[
-				16
+				18
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				17
+				19,
+				20
 			]
 		}
 	],
@@ -388,12 +391,22 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "res/textures/awesomeface.png",
+			"path" : "res/textures/container.jpg",
 			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 1,
-			"path" : "res/textures/container.jpg",
+			"path" : "res/textures/floor_texture.jpg",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "res/textures/gradient.jpg",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 1,
+			"path" : "res/textures/wood.jpg",
 			"sourceGroupIndex" : 3
 		},
 		{
@@ -430,6 +443,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "include/Maze.h",
+			"sourceGroupIndex" : 6
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Cube.h",
 			"sourceGroupIndex" : 6
 		}
 	],
