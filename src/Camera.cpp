@@ -97,7 +97,7 @@ void Camera::ProcessKeyboard(Camera_Movement direction, float deltaTime, const s
     }
 
     Position += offset;
-    Position.y = 1.0f; // Ensure camera stays at y = 1.0f
+    Position.y = 1.2f; // Ensure camera stays at y = 1.2f
 }
 
 
