@@ -22,8 +22,11 @@ void scroll_callback(GLFWwindow *window, double xoffset, double yoffset);
 void processInput(GLFWwindow *window);
 
 // settings
-const unsigned int SCR_WIDTH = 1920;
-const unsigned int SCR_HEIGHT = 1080;
+//const unsigned int SCR_WIDTH = 1920;
+//const unsigned int SCR_HEIGHT = 1080;
+
+const unsigned int SCR_WIDTH = 900;
+const unsigned int SCR_HEIGHT = 900;
 
 // camera
 static Camera camera(glm::vec3(0.0f, 1.2f, 3.0f));
@@ -34,9 +37,12 @@ static bool firstMouse = true;
 // timing
 static float deltaTime = 0.0f; // time between current frame and last frame
 static float lastFrame = 0.0f;
+unsigned int collectedCubes = 0;
 
 std::vector<Cube> level;
 const unsigned int maxCubes = 5; // Maximum number of cubes to place
+
+
 
 static std::vector<Cube> convertMazeToWorld(std::vector<glm::vec3> maze){
     std::vector<Cube> result;
@@ -354,28 +360,38 @@ int main() {
         // render boxes
         glBindVertexArray(VAO);
         for (unsigned int i = 0; i < level.size(); i++) {
-            // calculate the model matrix for each object and pass it to shader before
-            // drawing
-            glm::mat4 model = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+            glm::mat4 model = glm::mat4(1.0f);
             model = glm::translate(model, level[i].position);
             model = glm::scale(model, level[i].size);
             ourShader.setMat4("model", model);
 
-            if (i<mazeHeight * mazeWidth){
+            if (i < mazeHeight * mazeWidth) {
                 // Set the floor texture
                 glActiveTexture(GL_TEXTURE0);
                 glBindTexture(GL_TEXTURE_2D, texture1);
-            }else if(i>=mazeHeight * mazeWidth && i<level.size()-maxCubes){
+            } else if (i >= mazeHeight * mazeWidth && i < level.size() - maxCubes) {
                 // Set the wall texture
                 glActiveTexture(GL_TEXTURE0);
                 glBindTexture(GL_TEXTURE_2D, texture2);
-            }else{
+            } else {
                 // Set texture for the cubes
                 glActiveTexture(GL_TEXTURE0);
                 glBindTexture(GL_TEXTURE_2D, texture3);
             }
 
-            glDrawArrays(GL_TRIANGLES, 0, 36);
+            if (i >= level.size() - maxCubes) {
+                // Render only the last five cubes
+                glDrawArrays(GL_TRIANGLES, 0, 36);
+                collectedCubes++;
+
+                if (glm::distance(camera.Position, level[i].position) < 0.5f) {
+                    level.erase(level.begin() + i);
+                    collectedCubes++;
+                }
+            } else {
+                // Render walls and other elements
+                glDrawArrays(GL_TRIANGLES, 0, 36);
+            }
         }
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
@@ -402,7 +418,6 @@ int main() {
 void processInput(GLFWwindow *window) {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
-
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
         camera.ProcessKeyboard(FORWARD, deltaTime,level);
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
