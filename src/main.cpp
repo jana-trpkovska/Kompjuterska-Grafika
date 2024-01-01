@@ -22,11 +22,8 @@ void scroll_callback(GLFWwindow *window, double xoffset, double yoffset);
 void processInput(GLFWwindow *window);
 
 // settings
-//const unsigned int SCR_WIDTH = 1920;
-//const unsigned int SCR_HEIGHT = 1080;
-
-const unsigned int SCR_WIDTH = 900;
-const unsigned int SCR_HEIGHT = 900;
+const unsigned int SCR_WIDTH = 1920;
+const unsigned int SCR_HEIGHT = 1080;
 
 // camera
 static Camera camera(glm::vec3(0.0f, 1.2f, 3.0f));
@@ -382,11 +379,11 @@ int main() {
             if (i >= level.size() - maxCubes) {
                 // Render only the last five cubes
                 glDrawArrays(GL_TRIANGLES, 0, 36);
-                collectedCubes++;
 
                 if (glm::distance(camera.Position, level[i].position) < 0.5f) {
                     level.erase(level.begin() + i);
                     collectedCubes++;
+                    std::cout<<collectedCubes<<std::endl;
                 }
             } else {
                 // Render walls and other elements
