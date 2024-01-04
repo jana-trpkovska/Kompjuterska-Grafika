@@ -23,6 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b174cf3b-8b4c-4185-a146-2c500b0fa19e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,11 +86,6 @@
   </component>
   <component name="RunManager" selected="CMake Application.OpenGLPrj">
     <configuration name="OpenGLPrj" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="OpenGLPrj" TARGET_NAME="OpenGLPrj" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="OpenGLPrj" RUN_TARGET_NAME="OpenGLPrj">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -199,7 +195,7 @@
       <workItem from="1703447248494" duration="1860000" />
       <workItem from="1703890070491" duration="292000" />
       <workItem from="1703949851068" duration="1285000" />
-      <workItem from="1704143763729" duration="1028000" />
+      <workItem from="1704143763729" duration="1257000" />
     </task>
     <servers />
   </component>

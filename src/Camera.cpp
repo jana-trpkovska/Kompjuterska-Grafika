@@ -55,7 +55,7 @@ void Camera::ProcessKeyboard(Camera_Movement direction, float deltaTime, const s
         offset += Right * velocity;
 
     glm::vec3 newPosition = Position + offset;
-    newPosition.y = 1.0f; // Maintain y position at 1.0f
+    newPosition.y = 1.1f; // Maintain y position at 1.0f
 
     const float wallBuffer = 0.15f; // Adjust the collision buffer here
     const unsigned int maxCubes = 5; // Number of cubes to skip collision detection for
@@ -81,7 +81,7 @@ void Camera::ProcessKeyboard(Camera_Movement direction, float deltaTime, const s
     }
 
     Position += offset;
-    Position.y = 1.2f; // Ensure camera stays at y = 1.2f
+    Position.y = 1.1f; // Ensure camera stays at y = 1.2f
 }
 
 // Processes input received from a mouse input system. Expects the offset

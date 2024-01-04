@@ -13,7 +13,7 @@
 #include <glm/glm.hpp>
 
 constexpr unsigned mazeWidth = 5, mazeHeight = 5;
-constexpr float wallSize = 0.25f;
+constexpr float wallSize = 0.1f;
 std::vector<glm::vec3> generateMaze();
 
 #endif //OPENGLPRJ_MAZE_H
