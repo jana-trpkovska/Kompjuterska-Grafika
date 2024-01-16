@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/glfw/cmake_install.cmake")
+  include("C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/cmake_install.cmake")
 
 endif()
 

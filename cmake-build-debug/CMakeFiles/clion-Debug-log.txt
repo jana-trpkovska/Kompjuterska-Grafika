@@ -1,5 +1,17 @@
 "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Users/Jana Trpkovska/AppData/Local/JetBrains/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika" -B "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug"
 -- Using Win32 for window creation
+-- Could NOT find PkgConfig (missing: PKG_CONFIG_EXECUTABLE) 
+CMake Warning at vendor/freetype/builds/cmake/FindHarfBuzz.cmake:99 (message):
+  Required version (2.0.0) is higher than found version ()
+Call Stack (most recent call first):
+  vendor/freetype/CMakeLists.txt:258 (find_package)
+
+
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+-- Could NOT find PNG (missing: PNG_LIBRARY PNG_PNG_INCLUDE_DIR) 
+-- Could NOT find ZLIB (missing: ZLIB_LIBRARY ZLIB_INCLUDE_DIR) 
+-- Could NOT find BZip2 (missing: BZIP2_LIBRARIES BZIP2_INCLUDE_DIR) 
+-- Could NOT find BrotliDec (missing: BROTLIDEC_INCLUDE_DIRS BROTLIDEC_LIBRARIES) 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug

@@ -47,13 +47,13 @@ cmake_ninja_workdir = C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/cma
 #############################################
 # Order-only phony target for OpenGLPrj
 
-build cmake_object_order_depends_target_OpenGLPrj: phony || cmake_object_order_depends_target_glfw
+build cmake_object_order_depends_target_OpenGLPrj: phony || cmake_object_order_depends_target_freetype cmake_object_order_depends_target_glfw
 
 build CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj: CXX_COMPILER__OpenGLPrj_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/src/Camera.cpp || cmake_object_order_depends_target_OpenGLPrj
   DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika\""
   DEP_FILE = CMakeFiles\OpenGLPrj.dir\src\Camera.cpp.obj.d
   FLAGS = -Wall -Wextra -Wpedantic -std=c++11 -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb"
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include"
   OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLPrj.dir\src
 
@@ -61,7 +61,7 @@ build CMakeFiles/OpenGLPrj.dir/src/Maze.cpp.obj: CXX_COMPILER__OpenGLPrj_Debug C
   DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika\""
   DEP_FILE = CMakeFiles\OpenGLPrj.dir\src\Maze.cpp.obj.d
   FLAGS = -Wall -Wextra -Wpedantic -std=c++11 -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb"
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include"
   OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLPrj.dir\src
 
@@ -69,7 +69,7 @@ build CMakeFiles/OpenGLPrj.dir/src/Shader.cpp.obj: CXX_COMPILER__OpenGLPrj_Debug
   DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika\""
   DEP_FILE = CMakeFiles\OpenGLPrj.dir\src\Shader.cpp.obj.d
   FLAGS = -Wall -Wextra -Wpedantic -std=c++11 -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb"
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include"
   OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLPrj.dir\src
 
@@ -77,7 +77,7 @@ build CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj: CXX_COMPILER__OpenGLPrj_Debug C
   DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika\""
   DEP_FILE = CMakeFiles\OpenGLPrj.dir\src\main.cpp.obj.d
   FLAGS = -Wall -Wextra -Wpedantic -std=c++11 -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb"
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include"
   OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLPrj.dir\src
 
@@ -85,7 +85,7 @@ build CMakeFiles/OpenGLPrj.dir/vendor/glad/src/glad.c.obj: C_COMPILER__OpenGLPrj
   DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika\""
   DEP_FILE = CMakeFiles\OpenGLPrj.dir\vendor\glad\src\glad.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb"
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include"
   OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLPrj.dir\vendor\glad\src
 
@@ -97,9 +97,9 @@ build CMakeFiles/OpenGLPrj.dir/vendor/glad/src/glad.c.obj: C_COMPILER__OpenGLPrj
 #############################################
 # Link the executable OpenGLPrj\bin\OpenGLPrj.exe
 
-build OpenGLPrj/bin/OpenGLPrj.exe: CXX_EXECUTABLE_LINKER__OpenGLPrj_Debug CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj CMakeFiles/OpenGLPrj.dir/src/Maze.cpp.obj CMakeFiles/OpenGLPrj.dir/src/Shader.cpp.obj CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj CMakeFiles/OpenGLPrj.dir/vendor/glad/src/glad.c.obj | vendor/glfw/src/libglfw3.a || vendor/glfw/src/libglfw3.a
+build OpenGLPrj/bin/OpenGLPrj.exe: CXX_EXECUTABLE_LINKER__OpenGLPrj_Debug CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj CMakeFiles/OpenGLPrj.dir/src/Maze.cpp.obj CMakeFiles/OpenGLPrj.dir/src/Shader.cpp.obj CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj CMakeFiles/OpenGLPrj.dir/vendor/glad/src/glad.c.obj | vendor/freetype/libfreetyped.a vendor/glfw/src/libglfw3.a || vendor/freetype/libfreetyped.a vendor/glfw/src/libglfw3.a
   FLAGS = -Wall -Wextra -Wpedantic -std=c++11 -g
-  LINK_LIBRARIES = vendor/glfw/src/libglfw3.a  -lmingw32  -lgcc  -lmoldname  -lmingwex  -lkernel32  -lpthread  -ladvapi32  -lshell32  -luser32  -lkernel32  -liconv  -lmingw32  -lgcc  -lmoldname  -lmingwex  -lkernel32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = vendor/freetype/libfreetyped.a  vendor/glfw/src/libglfw3.a  -lmingw32  -lgcc  -lmoldname  -lmingwex  -lkernel32  -lpthread  -ladvapi32  -lshell32  -luser32  -lkernel32  -liconv  -lmingw32  -lgcc  -lmoldname  -lmingwex  -lkernel32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/Users/JANATR~1/AppData/Local/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/X86_64~1/112~1.0   -LC:/Users/JANATR~1/AppData/Local/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc   -LC:/Users/JANATR~1/AppData/Local/JETBRA~1/CLION2~1.2/bin/mingw/X86_64~1/lib   -LC:/Users/JANATR~1/AppData/Local/JETBRA~1/CLION2~1.2/bin/mingw/lib
   OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
   POST_BUILD = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E copy_directory "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/res" "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/OpenGLPrj/bin/../res""
@@ -107,6 +107,30 @@ build OpenGLPrj/bin/OpenGLPrj.exe: CXX_EXECUTABLE_LINKER__OpenGLPrj_Debug CMakeF
   TARGET_FILE = OpenGLPrj\bin\OpenGLPrj.exe
   TARGET_IMPLIB = OpenGLPrj\lib\libOpenGLPrj.dll.a
   TARGET_PDB = OpenGLPrj.exe.dbg
+
+
+#############################################
+# Utility command for package
+
+build CMakeFiles/package.util: CUSTOM_COMMAND all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build package: phony CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/CPackSourceConfig.cmake""
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build package_source: phony CMakeFiles/package_source.util
 
 
 #############################################
@@ -183,6 +207,30 @@ build install/strip: phony CMakeFiles/install/strip.util
 # Utility command for uninstall
 
 build vendor/glfw/uninstall: phony vendor/glfw/CMakeFiles/uninstall
+
+
+#############################################
+# Utility command for package
+
+build vendor/glfw/CMakeFiles/package.util: CUSTOM_COMMAND vendor/glfw/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build vendor/glfw/package: phony vendor/glfw/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build vendor/glfw/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/CPackSourceConfig.cmake""
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build vendor/glfw/package_source: phony vendor/glfw/CMakeFiles/package_source.util
 
 
 #############################################
@@ -408,6 +456,30 @@ build vendor/glfw/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Debug vendor/glf
 
 
 #############################################
+# Utility command for package
+
+build vendor/glfw/src/CMakeFiles/package.util: CUSTOM_COMMAND vendor/glfw/src/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build vendor/glfw/src/package: phony vendor/glfw/src/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build vendor/glfw/src/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/CPackSourceConfig.cmake""
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build vendor/glfw/src/package_source: phony vendor/glfw/src/CMakeFiles/package_source.util
+
+
+#############################################
 # Utility command for edit_cache
 
 build vendor/glfw/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -472,13 +544,479 @@ build vendor/glfw/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND vendor/glfw/
 build vendor/glfw/src/install/strip: phony vendor/glfw/src/CMakeFiles/install/strip.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target freetype
+
+
+#############################################
+# Order-only phony target for freetype
+
+build cmake_object_order_depends_target_freetype: phony || vendor/freetype/CMakeFiles/freetype.dir
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/autofit/autofit.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/autofit/autofit.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\autofit\autofit.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\autofit
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftbase.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftbase.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftbase.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftbbox.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftbbox.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftbbox.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftbdf.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftbdf.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftbdf.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftbitmap.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftbitmap.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftbitmap.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftcid.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftcid.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftcid.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftfstype.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftfstype.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftfstype.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftgasp.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftgasp.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftgasp.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftglyph.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftglyph.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftglyph.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftgxval.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftgxval.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftgxval.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftinit.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftinit.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftinit.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftmm.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftmm.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftmm.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftotval.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftotval.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftotval.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftpatent.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftpatent.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftpatent.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftpfr.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftpfr.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftpfr.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftstroke.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftstroke.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftstroke.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftsynth.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftsynth.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftsynth.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/fttype1.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/fttype1.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\fttype1.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftwinfnt.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftwinfnt.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/bdf/bdf.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/bdf/bdf.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\bdf\bdf.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\bdf
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/bzip2/ftbzip2.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\bzip2\ftbzip2.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\bzip2
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/cache/ftcache.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/cache/ftcache.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\cache\ftcache.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\cache
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/cff/cff.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/cff/cff.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\cff\cff.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\cff
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/cid/type1cid.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/cid/type1cid.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\cid\type1cid.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\cid
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/gzip/ftgzip.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\gzip\ftgzip.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\gzip
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/lzw/ftlzw.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\lzw\ftlzw.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\lzw
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/pcf/pcf.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/pcf/pcf.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\pcf\pcf.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\pcf
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/pfr/pfr.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/pfr/pfr.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\pfr\pfr.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\pfr
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/psaux/psaux.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/psaux/psaux.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\psaux\psaux.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\psaux
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/pshinter/pshinter.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\pshinter\pshinter.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\pshinter
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/psnames/psnames.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/psnames/psnames.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\psnames\psnames.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\psnames
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/raster/raster.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/raster/raster.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\raster\raster.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\raster
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/sdf/sdf.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/sdf/sdf.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\sdf\sdf.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\sdf
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/sfnt/sfnt.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\sfnt\sfnt.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\sfnt
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/smooth/smooth.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/smooth/smooth.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\smooth\smooth.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\smooth
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/svg/svg.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/svg/svg.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\svg\svg.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\svg
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/truetype/truetype.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/truetype/truetype.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\truetype\truetype.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\truetype
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/type1/type1.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/type1/type1.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\type1\type1.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\type1
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/type42/type42.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/type42/type42.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\type42\type42.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\type42
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/winfonts/winfnt.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\winfonts\winfnt.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\winfonts
+
+build vendor/freetype/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/builds/windows/ftsystem.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\builds\windows\ftsystem.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\builds\windows
+
+build vendor/freetype/CMakeFiles/freetype.dir/builds/windows/ftdebug.c.obj: C_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/builds/windows/ftdebug.c || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\builds\windows\ftdebug.c.obj.d
+  FLAGS = -g -fvisibility=hidden -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\builds\windows
+
+build vendor/freetype/CMakeFiles/freetype.dir/src/base/ftver.rc.obj: RC_COMPILER__freetype_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/src/base/ftver.rc || cmake_object_order_depends_target_freetype
+  DEFINES = -DFT2_BUILD_LIBRARY -D_CRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS
+  DEP_FILE = vendor\freetype\CMakeFiles\freetype.dir\src\base\ftver.rc.obj.d
+  INCLUDES = -I "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include" -I "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include/freetype/config"
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  OBJECT_FILE_DIR = vendor\freetype\CMakeFiles\freetype.dir\src\base
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target freetype
+
+
+#############################################
+# Link the static library vendor\freetype\libfreetyped.a
+
+build vendor/freetype/libfreetyped.a: C_STATIC_LIBRARY_LINKER__freetype_Debug vendor/freetype/CMakeFiles/freetype.dir/src/autofit/autofit.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftbase.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftbbox.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftbdf.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftbitmap.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftcid.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftfstype.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftgasp.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftglyph.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftgxval.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftinit.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftmm.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftotval.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftpatent.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftpfr.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftstroke.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftsynth.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/fttype1.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftwinfnt.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/bdf/bdf.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/bzip2/ftbzip2.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/cache/ftcache.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/cff/cff.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/cid/type1cid.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/gzip/ftgzip.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/lzw/ftlzw.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/pcf/pcf.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/pfr/pfr.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/psaux/psaux.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/pshinter/pshinter.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/psnames/psnames.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/raster/raster.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/sdf/sdf.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/sfnt/sfnt.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/smooth/smooth.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/svg/svg.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/truetype/truetype.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/type1/type1.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/type42/type42.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/winfonts/winfnt.c.obj vendor/freetype/CMakeFiles/freetype.dir/builds/windows/ftsystem.c.obj vendor/freetype/CMakeFiles/freetype.dir/builds/windows/ftdebug.c.obj vendor/freetype/CMakeFiles/freetype.dir/src/base/ftver.rc.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = vendor\freetype\CMakeFiles\freetype.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = vendor\freetype\libfreetyped.a
+  TARGET_PDB = freetyped.a.dbg
+
+
+#############################################
+# Utility command for package
+
+build vendor/freetype/CMakeFiles/package.util: CUSTOM_COMMAND vendor/freetype/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackConfig.cmake"
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build vendor/freetype/package: phony vendor/freetype/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for package_source
+
+build vendor/freetype/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cpack.exe" --config ./CPackSourceConfig.cmake "C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/CPackSourceConfig.cmake""
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build vendor/freetype/package_source: phony vendor/freetype/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build vendor/freetype/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug\vendor\freetype" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build vendor/freetype/edit_cache: phony vendor/freetype/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build vendor/freetype/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug\vendor\freetype" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika" -B"C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug""
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build vendor/freetype/rebuild_cache: phony vendor/freetype/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build vendor/freetype/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build vendor/freetype/CMakeFiles/install.util: CUSTOM_COMMAND vendor/freetype/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug\vendor\freetype" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build vendor/freetype/install: phony vendor/freetype/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build vendor/freetype/CMakeFiles/install/local.util: CUSTOM_COMMAND vendor/freetype/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug\vendor\freetype" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build vendor/freetype/install/local: phony vendor/freetype/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build vendor/freetype/CMakeFiles/install/strip.util: CUSTOM_COMMAND vendor/freetype/all
+  COMMAND = cmd.exe /C "cd /D "C:\Users\Jana Trpkovska\Desktop\Kompjuterska-Grafika\cmake-build-debug\vendor\freetype" && "C:\Users\Jana Trpkovska\AppData\Local\JetBrains\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build vendor/freetype/install/strip: phony vendor/freetype/CMakeFiles/install/strip.util
+
+# =============================================================================
 # Target aliases.
 
 build OpenGLPrj: phony OpenGLPrj/bin/OpenGLPrj.exe
 
 build OpenGLPrj.exe: phony OpenGLPrj/bin/OpenGLPrj.exe
 
+build freetype: phony vendor/freetype/libfreetyped.a
+
 build glfw: phony vendor/glfw/src/libglfw3.a
+
+build libfreetyped.a: phony vendor/freetype/libfreetyped.a
 
 build libglfw3.a: phony vendor/glfw/src/libglfw3.a
 
@@ -492,7 +1030,14 @@ build uninstall: phony vendor/glfw/uninstall
 #############################################
 # Folder: C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug
 
-build all: phony OpenGLPrj/bin/OpenGLPrj.exe vendor/glfw/all
+build all: phony OpenGLPrj/bin/OpenGLPrj.exe vendor/glfw/all vendor/freetype/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype
+
+build vendor/freetype/all: phony vendor/freetype/libfreetyped.a
 
 # =============================================================================
 
@@ -520,14 +1065,14 @@ build vendor/glfw/src/all: phony vendor/glfw/src/libglfw3.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDependentOption.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckCCompilerFlag.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckIncludeFile.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckLibraryExists.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindThreads.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/GNUInstallDirs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/glfw3.pc.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/glfw3Config.cmake.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/src/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/src/glfw_config.h.in CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDependentOption.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CPack.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CPackComponent.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckCCompilerFlag.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckIncludeFile.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckLibraryExists.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindBZip2.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPNG.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPkgConfig.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindThreads.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindZLIB.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/GNUInstallDirs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/SelectLibraryConfigurations.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Templates/CPackConfig.cmake.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/builds/cmake/FindBrotliDec.cmake C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/builds/cmake/FindHarfBuzz.cmake C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/glfw3.pc.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/glfw3Config.cmake.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/src/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/src/glfw_config.h.in CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDependentOption.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckCCompilerFlag.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckIncludeFile.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckLibraryExists.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindThreads.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/GNUInstallDirs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/glfw3.pc.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/glfw3Config.cmake.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/src/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/src/glfw_config.h.in CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+build C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeDependentOption.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeRCInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CPack.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CPackComponent.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckCCompilerFlag.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckCSourceCompiles.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckIncludeFile.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/CheckLibraryExists.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindBZip2.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPNG.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindPkgConfig.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindThreads.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/FindZLIB.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/GNUInstallDirs.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-C.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-GNU.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows-windres.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/Windows.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/SelectLibraryConfigurations.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/Jana$ Trpkovska/AppData/Local/JetBrains/CLion$ 2022.3.2/bin/cmake/win/x64/share/cmake-3.24/Templates/CPackConfig.cmake.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/builds/cmake/FindBrotliDec.cmake C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/builds/cmake/FindHarfBuzz.cmake C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/cmake_uninstall.cmake.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/glfw3.pc.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/CMake/glfw3Config.cmake.in C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/src/CMakeLists.txt C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/src/glfw_config.h.in CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeRCCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
 
 
 #############################################
