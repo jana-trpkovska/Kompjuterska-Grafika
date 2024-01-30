@@ -59,6 +59,9 @@ const unsigned int maxCubes = 5; // Maximum number of cubes to place
 std::map<GLchar, Character> Characters;
 unsigned int textVAO, textVBO;
 
+// lighting
+static glm::vec3 lightPos(0.0f, 2.0f, 0.0f);
+
 int main() {
     // glfw: initialize and configure
     // ------------------------------
@@ -109,12 +112,16 @@ int main() {
 
     std::string used_shaders("shader");
     std::string text_shaders("text");
+    std::string lamp_shader("lamp");
 
     Shader ourShader(shader_location + used_shaders + std::string(".vert"),
                      shader_location + used_shaders + std::string(".frag"));
 
     Shader textShader(shader_location + text_shaders + std::string(".vert"),
                       shader_location + text_shaders + std::string(".frag"));
+
+    Shader lampShader(shader_location + lamp_shader + std::string(".vert"),
+                      shader_location + lamp_shader + std::string(".frag"));
 
     glm::mat4 projection_text = glm::ortho(0.0f, static_cast<float>(SCR_WIDTH), 0.0f, static_cast<float>(SCR_HEIGHT));
     textShader.use();
@@ -271,6 +278,17 @@ int main() {
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
+    //light VAO
+    unsigned int lightVAO;
+    glGenVertexArrays(1, &lightVAO);
+    glBindVertexArray(lightVAO);
+
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    // note that we update the lamp's position attribute's stride to reflect the
+    // updated buffer data
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
+
     // load and create a texture
     // -------------------------
     unsigned int texture1, texture2, texture3;
@@ -422,21 +440,33 @@ int main() {
 
         // activate shader
         ourShader.use();
-        ourShader.setVec3("light.position", camera.Position);
-        ourShader.setVec3("light.direction", camera.Front);
-        ourShader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
-        ourShader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));
-        ourShader.setVec3("viewPos", camera.Position);
 
-        // light properties
-        ourShader.setVec3("light.ambient", 0.1f, 0.1f, 0.1f);
-        // we configure the diffuse intensity slightly higher; the right lighting conditions differ with each lighting method and environment.
-        // each environment and lighting type requires some tweaking to get the best out of your environment.
-        ourShader.setVec3("light.diffuse", 0.8f, 0.8f, 0.8f);
-        ourShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
-        ourShader.setFloat("light.constant", 1.0f);
-        ourShader.setFloat("light.linear", 0.09f);
-        ourShader.setFloat("light.quadratic", 0.032f);
+        // directional light
+        ourShader.setVec3("dirLight.direction", -0.2f, -1.0f, -0.3f);
+        ourShader.setVec3("dirLight.ambient", 0.05f, 0.05f, 0.05f);
+        ourShader.setVec3("dirLight.diffuse", 0.4f, 0.4f, 0.4f);
+        ourShader.setVec3("dirLight.specular", 0.5f, 0.5f, 0.5f);
+
+        // point light
+        ourShader.setVec3("pointLights[0].position", lightPos);
+        ourShader.setVec3("pointLights[0].ambient", 0.05f, 0.05f, 0.05f);
+        ourShader.setVec3("pointLights[0].diffuse", 0.8f, 0.8f, 0.8f);
+        ourShader.setVec3("pointLights[0].specular", 1.0f, 1.0f, 1.0f);
+        ourShader.setFloat("pointLights[0].constant", 1.0f);
+        ourShader.setFloat("pointLights[0].linear", 0.09f);
+        ourShader.setFloat("pointLights[0].quadratic", 0.032f);
+
+        // spotLight
+        ourShader.setVec3("spotLight.position", camera.Position);
+        ourShader.setVec3("spotLight.direction", camera.Front);
+        ourShader.setVec3("spotLight.ambient", 0.0f, 0.0f, 0.0f);
+        ourShader.setVec3("spotLight.diffuse", 1.0f, 1.0f, 1.0f);
+        ourShader.setVec3("spotLight.specular", 1.0f, 1.0f, 1.0f);
+        ourShader.setFloat("spotLight.constant", 1.0f);
+        ourShader.setFloat("spotLight.linear", 0.09f);
+        ourShader.setFloat("spotLight.quadratic", 0.032f);
+        ourShader.setFloat("spotLight.cutOff", glm::cos(glm::radians(12.5f)));
+        ourShader.setFloat("spotLight.outerCutOff", glm::cos(glm::radians(15.0f)));
 
         // material properties
         ourShader.setFloat("material.shininess", 32.0f);
@@ -452,10 +482,11 @@ int main() {
         glm::mat4 view = camera.GetViewMatrix();
         ourShader.setMat4("view", view);
 
+        glm::mat4 model;
         // render boxes
         glBindVertexArray(VAO);
         for (unsigned int i = 0; i < level.size(); i++) {
-            glm::mat4 model = glm::mat4(1.0f);
+            model = glm::mat4(1.0f);
             model = glm::translate(model, level[i].position);
             model = glm::scale(model, level[i].size);
             ourShader.setMat4("model", model);
@@ -489,6 +520,18 @@ int main() {
             }
         }
 
+        // also draw the lamp object
+        lampShader.use();
+        lampShader.setMat4("projection", projection);
+        lampShader.setMat4("view", view);
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, lightPos);
+        model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
+        lampShader.setMat4("model", model);
+
+        glBindVertexArray(lightVAO);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
         // etc.)
         // -------------------------------------------------------------------------------
@@ -499,6 +542,7 @@ int main() {
     // optional: de-allocate all resources once they've outlived their purpose:
     // ------------------------------------------------------------------------
     glDeleteVertexArrays(1, &VAO);
+    glDeleteVertexArrays(1, &lightVAO);
     glDeleteBuffers(1, &VBO);
 
     // glfw: terminate, clearing all previously allocated GLFW resources.
