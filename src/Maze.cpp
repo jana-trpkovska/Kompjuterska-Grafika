@@ -85,5 +85,9 @@ std::vector<glm::vec3> generateMaze(){
             used.pop();
         }
     }
+
+    walls.push_back(glm::vec3(0, -0.0001, 1));
+    walls.push_back(glm::vec3(mazeWidth-1, mazeWidth-1 + 0.9, 1));
+
     return walls;
 }
