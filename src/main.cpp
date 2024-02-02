@@ -105,6 +105,7 @@ int main() {
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glDepthFunc(GL_LESS);
 
     // build and compile our shader program
     // ------------------------------------
@@ -427,17 +428,6 @@ int main() {
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        if (gameWon) {
-            float textWidth = CalculateTextWidth("WINNER", 2.0f);
-            RenderText(textShader, "WINNER", (SCR_WIDTH - textWidth) / 2.0f, SCR_HEIGHT / 2.0f, 2.0f, glm::vec3(0.0f, 1.0f, 0.0f));
-        } else if (gameLost) {
-            float textWidth = CalculateTextWidth("GAME OVER", 2.0f);
-            RenderText(textShader, "GAME OVER", (SCR_WIDTH - textWidth) / 2.0f, SCR_HEIGHT / 2.0f, 2.0f, glm::vec3(1.0f, 0.0f, 0.0f));
-        }
-
-        RenderText(textShader, "Time left: " + std::to_string((int)timer) + "s", SCR_WIDTH - 200.0f, SCR_HEIGHT - 50.0f, 0.5f, glm::vec3(1.0f));
-        RenderText(textShader, "Collected Cubes: " + std::to_string(collectedCubes), 20.0f, SCR_HEIGHT - 50.0f, 0.5f, glm::vec3(1.0f));
-
         // activate shader
         ourShader.use();
 
@@ -531,6 +521,20 @@ int main() {
 
         glBindVertexArray(lightVAO);
         glDrawArrays(GL_TRIANGLES, 0, 36);
+
+        glDisable(GL_DEPTH_TEST);
+        if (gameWon) {
+            float textWidth = CalculateTextWidth("WINNER", 2.0f);
+            RenderText(textShader, "WINNER", (SCR_WIDTH - textWidth) / 2.0f, SCR_HEIGHT / 2.0f, 2.0f, glm::vec3(0.0f, 1.0f, 0.0f));
+        } else if (gameLost) {
+            float textWidth = CalculateTextWidth("GAME OVER", 2.0f);
+            RenderText(textShader, "GAME OVER", (SCR_WIDTH - textWidth) / 2.0f, SCR_HEIGHT / 2.0f, 2.0f, glm::vec3(1.0f, 0.0f, 0.0f));
+        }
+
+        RenderText(textShader, "Time left: " + std::to_string((int)timer) + "s", SCR_WIDTH - 200.0f, SCR_HEIGHT - 50.0f, 0.5f, glm::vec3(1.0f));
+        RenderText(textShader, "Collected Cubes: " + std::to_string(collectedCubes), 20.0f, SCR_HEIGHT - 50.0f, 0.5f, glm::vec3(1.0f));
+
+        glEnable(GL_DEPTH_TEST);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
         // etc.)
