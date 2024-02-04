@@ -57,6 +57,14 @@ build CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj: CXX_COMPILER__OpenGLPrj_Debug
   OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLPrj.dir\src
 
+build CMakeFiles/OpenGLPrj.dir/src/InputManager.cpp.obj: CXX_COMPILER__OpenGLPrj_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/src/InputManager.cpp || cmake_object_order_depends_target_OpenGLPrj
+  DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika\""
+  DEP_FILE = CMakeFiles\OpenGLPrj.dir\src\InputManager.cpp.obj.d
+  FLAGS = -Wall -Wextra -Wpedantic -std=c++11 -g -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include"
+  OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLPrj.dir\src
+
 build CMakeFiles/OpenGLPrj.dir/src/Maze.cpp.obj: CXX_COMPILER__OpenGLPrj_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/src/Maze.cpp || cmake_object_order_depends_target_OpenGLPrj
   DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika\""
   DEP_FILE = CMakeFiles\OpenGLPrj.dir\src\Maze.cpp.obj.d
@@ -65,9 +73,25 @@ build CMakeFiles/OpenGLPrj.dir/src/Maze.cpp.obj: CXX_COMPILER__OpenGLPrj_Debug C
   OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLPrj.dir\src
 
+build CMakeFiles/OpenGLPrj.dir/src/Renderer.cpp.obj: CXX_COMPILER__OpenGLPrj_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/src/Renderer.cpp || cmake_object_order_depends_target_OpenGLPrj
+  DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika\""
+  DEP_FILE = CMakeFiles\OpenGLPrj.dir\src\Renderer.cpp.obj.d
+  FLAGS = -Wall -Wextra -Wpedantic -std=c++11 -g -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include"
+  OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLPrj.dir\src
+
 build CMakeFiles/OpenGLPrj.dir/src/Shader.cpp.obj: CXX_COMPILER__OpenGLPrj_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/src/Shader.cpp || cmake_object_order_depends_target_OpenGLPrj
   DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika\""
   DEP_FILE = CMakeFiles\OpenGLPrj.dir\src\Shader.cpp.obj.d
+  FLAGS = -Wall -Wextra -Wpedantic -std=c++11 -g -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include"
+  OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLPrj.dir\src
+
+build CMakeFiles/OpenGLPrj.dir/src/TextRenderer.cpp.obj: CXX_COMPILER__OpenGLPrj_Debug C$:/Users/Jana$ Trpkovska/Desktop/Kompjuterska-Grafika/src/TextRenderer.cpp || cmake_object_order_depends_target_OpenGLPrj
+  DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR="\"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika\""
+  DEP_FILE = CMakeFiles\OpenGLPrj.dir\src\TextRenderer.cpp.obj.d
   FLAGS = -Wall -Wextra -Wpedantic -std=c++11 -g -fdiagnostics-color=always
   INCLUDES = -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glad/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glfw/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/glm" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/stb" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/cmake-build-debug/vendor/freetype/include" -I"C:/Users/Jana Trpkovska/Desktop/Kompjuterska-Grafika/vendor/freetype/include"
   OBJECT_DIR = CMakeFiles\OpenGLPrj.dir
@@ -97,7 +121,7 @@ build CMakeFiles/OpenGLPrj.dir/vendor/glad/src/glad.c.obj: C_COMPILER__OpenGLPrj
 #############################################
 # Link the executable OpenGLPrj\bin\OpenGLPrj.exe
 
-build OpenGLPrj/bin/OpenGLPrj.exe: CXX_EXECUTABLE_LINKER__OpenGLPrj_Debug CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj CMakeFiles/OpenGLPrj.dir/src/Maze.cpp.obj CMakeFiles/OpenGLPrj.dir/src/Shader.cpp.obj CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj CMakeFiles/OpenGLPrj.dir/vendor/glad/src/glad.c.obj | vendor/freetype/libfreetyped.a vendor/glfw/src/libglfw3.a || vendor/freetype/libfreetyped.a vendor/glfw/src/libglfw3.a
+build OpenGLPrj/bin/OpenGLPrj.exe: CXX_EXECUTABLE_LINKER__OpenGLPrj_Debug CMakeFiles/OpenGLPrj.dir/src/Camera.cpp.obj CMakeFiles/OpenGLPrj.dir/src/InputManager.cpp.obj CMakeFiles/OpenGLPrj.dir/src/Maze.cpp.obj CMakeFiles/OpenGLPrj.dir/src/Renderer.cpp.obj CMakeFiles/OpenGLPrj.dir/src/Shader.cpp.obj CMakeFiles/OpenGLPrj.dir/src/TextRenderer.cpp.obj CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj CMakeFiles/OpenGLPrj.dir/vendor/glad/src/glad.c.obj | vendor/freetype/libfreetyped.a vendor/glfw/src/libglfw3.a || vendor/freetype/libfreetyped.a vendor/glfw/src/libglfw3.a
   FLAGS = -Wall -Wextra -Wpedantic -std=c++11 -g
   LINK_LIBRARIES = vendor/freetype/libfreetyped.a  vendor/glfw/src/libglfw3.a  -lmingw32  -lgcc  -lmoldname  -lmingwex  -lkernel32  -lpthread  -ladvapi32  -lshell32  -luser32  -lkernel32  -liconv  -lmingw32  -lgcc  -lmoldname  -lmingwex  -lkernel32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LC:/Users/JANATR~1/AppData/Local/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc/X86_64~1/112~1.0   -LC:/Users/JANATR~1/AppData/Local/JETBRA~1/CLION2~1.2/bin/mingw/lib/gcc   -LC:/Users/JANATR~1/AppData/Local/JETBRA~1/CLION2~1.2/bin/mingw/X86_64~1/lib   -LC:/Users/JANATR~1/AppData/Local/JETBRA~1/CLION2~1.2/bin/mingw/lib

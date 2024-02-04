@@ -59,7 +59,7 @@ add_definitions(-DGLFW_INCLUDE_NONE
 
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCES} ${PROJECT_HEADERS}
                                ${PROJECT_SHADERS} ${PROJECT_TEXTURES} ${PROJECT_CONFIGS}
-                               ${VENDORS_SOURCES} include/Maze.h src/Maze.cpp include/Cube.h include/Character.h)
+                               ${VENDORS_SOURCES} include/Maze.h src/Maze.cpp include/Cube.h include/Character.h include/InputManager.h include/Renderer.h include/TextRenderer.h src/InputManager.cpp src/Renderer.cpp src/TextRenderer.cpp)
 target_link_libraries(${PROJECT_NAME} freetype
 		      glfw
                       ${GLFW_LIBRARIES} ${GLAD_LIBRARIES}

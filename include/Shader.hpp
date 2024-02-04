@@ -13,7 +13,9 @@
 
 class Shader {
 public:
-  enum SHADER_TYPE { VERTEX, FRAGMENT, GEOMETRY };
+    Shader();
+
+    enum SHADER_TYPE { VERTEX, FRAGMENT, GEOMETRY };
 
   unsigned int ID;
   // constructor generates the shader on the fly
